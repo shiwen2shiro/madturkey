@@ -1,0 +1,160 @@
+
+<!doctype html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<!--  Mobile Viewport-->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+	<!-- concatenate and minify for production -->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+
+	<!--Scrirpt-->
+	<script src="script/jquery.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js">
+	</script>
+
+	<script src="script/script.js"></script>
+
+
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li> <a href="#parallax"> Mad Turkey </a></li>
+			<li> <a href="#aboutUs"> About Us </a></li>
+			<li> <a href="#poster"> Poster </a></li>
+			<li> <a href="#video"> Video </a></li>
+			<li> <a href="#noise"> Listen </a></li>
+			<li> <a href="#product"> Product </a></li>
+
+		</ul>
+	</header>
+
+	<!--parallax.js-->
+	<div id="parallax">
+		<ul id="scene">
+			<li class="layer" data-depth="1.00">
+				<img src="img/small_thunder.png">
+			</li>
+
+			<li class="layer" data-depth="0.80">
+				<img src="img/big_thunder.png">
+			</li>
+
+			<li class="layer" data-depth="0.60">
+				<img src="img/shadow_b.png">
+			</li>
+
+			<li class="layer" data-depth="0.40">
+				<img src="img/logo_b.png">
+			</li>
+
+		</ul>
+	</div>
+
+	<!-- Script -->
+	<script src="script/jquery.parallax.min.js"></script>
+	<script>
+	$('#scene').parallax();
+	</script>
+
+
+	<!-- about -->
+	<div id="aboutUs">
+		<p class="about_w">About Us</p>
+
+		<div class="center">
+			<hr>
+			<div class="shiwen">
+				<a href="" alt="shiwen">
+					<div class="photo_s">
+					</div>
+				</a>
+
+				<span>陳 詩 文</span>
+				<p class="textBlue">
+				shiwen2shiro@gmail.com<br>
+				0922528297</p>
+				<p>	Graphic<br>
+				Animation<br>
+				Interactive<br>
+				Web Design
+				</p>
+
+			</div>
+
+			<div class="pinchen">
+				<a href="" alt="pinchen">
+					<div class="photo_p">	
+					</div>
+				</a>
+
+				<span>林 品 辰</span>
+				<p class="textBlue">
+				shiwen2shiro@gmail.com<br>
+				0922528297</p>
+				<p>	Graphic<br>
+				Animation<br>
+				Interactive<br>
+				Web Design
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="say">
+			<p>噪音在我們的生活中持續的存在，無法避免，漸漸的我們就習慣並開始對他無感。<br>
+			因此我們想用各種感官方式以另一種角度去喚醒、感受這屬於我們一部份的生活。</p>
+	</div>
+
+	
+	<!--poster-->
+	<div id="poster">
+		<div class="poster_auto">
+
+			<div class="poster01"></div>
+			<div class="poster02"></div>
+			<div class="poster03"></div>
+			<div class="poster04"></div>
+
+	    </div>
+	  
+	</div>
+
+	<div id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/TmVuNMGp5Rw" frameborder="0" allowfullscreen>
+		</iframe>
+	</div>
+
+
+	<div id="noise">
+		
+		<div id="noise_img"></div>
+
+		<audio>
+           	<source src="media/list01.mp3"></source>
+           	<source src="media/list01.ogg"></source>			
+        </audio>
+
+	
+	</div>
+
+	<div id="product">	
+		<div class="pro_bg"></div>
+		<div class="money"></div>
+		<div class="box"></div>
+	</div>
+
+
+</body>
+
+
+

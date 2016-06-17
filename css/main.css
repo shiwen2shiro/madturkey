@@ -1,0 +1,401 @@
+
+
+html{
+	background-color: #10344e;
+	color: white;
+	font-size: 1.1em;
+}
+
+body{	
+	margin: 0px auto;
+	max-width: 1500px;
+	width: 100%;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+header{
+	z-index: 999;
+	height: 50px;
+	width: 100%;
+	background-color: #53d4db;
+	position: fixed;
+	top: 0px;
+}
+
+header ul{
+	display: block;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px; 
+	//border: 2px solid red;	
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 0.9em;
+
+}
+
+header ul li a:hover{
+	color: #10344e;
+}
+
+header ul li:nth-child(1) a{
+	color: #be2835;
+	font-weight: bold;
+	margin-left: -90px;
+}
+
+
+#parallax{
+	position: fixed;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 5%;
+	max-height: 900px;
+	height: 100%;
+	z-index: -1;
+}
+
+#scene{
+	text-align: center;
+}
+
+.layer:nth-child(3) {
+	position: relative;
+	max-width: 1050px;
+	text-align: center;
+	margin-left: 15%;
+	margin-top: 4%;
+
+}
+
+.layer:nth-child(4) {
+	position: relative;
+	max-width: 1200px;
+	text-align: center;
+	margin-left: 16%;
+	margin-top: 3%;
+}
+
+#aboutUs {
+	position: relative;
+	top: 800px;
+	display: block;
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/bg_blue.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	
+}
+
+
+.about_w{
+	font-size: 3em;
+	position: absolute;
+	display: block;
+	top: 70%;
+	left: 50%;
+	margin-left: -120px;
+}
+
+.center{
+	display: block;
+	max-width: 85%;
+	height: 700px;
+	margin: 80px auto;
+}
+
+.center hr{
+	position: relative;
+	top: 200px;
+	transform: rotate(90deg);
+	text-align: center;
+	border: 1px solid white;
+	width: 400px;
+}
+
+.shiwen, .pinchen{
+	float: left;
+	width: 365px;
+	height: auto;
+}
+
+.pinchen{
+	float: right;
+}
+
+.photo_s, .photo_p{
+	background-image: url(../img/shiwen_b.png);
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	transition: all 0.2s ease-in-out;
+}
+
+.photo_s:hover, .photo_p:hover{
+	background-image: url(../img/shiwen.png);
+	width: 365px;
+	height: 365px;
+}
+
+.photo_p{
+	background-image: url(../img/pinchen_b.png);
+}
+
+.photo_p:hover{
+	background-image: url(../img/pinchen.png);
+}
+
+.shiwen p, .pinchen p{
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 0.8em;
+}
+
+#aboutUs .center span{
+	display: block;
+	margin-top: 40px;
+	text-align: center;
+
+}
+
+.textBlue{
+	color: #10344e;
+	font-size: 1.2em;
+}
+
+
+#say{
+	height: auto;
+	top: 800px;
+	position: relative;
+	text-align: center;
+	padding: 3%;
+	background-color: #10344e;
+
+}
+
+#say p{
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+#poster{
+	height: 600px;
+	width: 100%;
+	margin-top: 850px;
+	display: block;
+	background-color: #10344e;
+	z-index: 9;
+}
+
+.poster_auto{
+	display: block;
+	width: 95%;
+	margin: auto;
+}
+
+.poster01, .poster02, .poster03, .poster04{
+	width: 250px; 
+	height: 462px; 
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 40px 1em;
+}
+
+.poster01{
+	background-image: url(../img/poster_s.jpg);
+}
+
+.poster02{
+	background-image: url(../img/poster_1_s.jpg);
+}
+
+.poster03{
+	background-image: url(../img/poster_2_s.jpg);
+}
+
+.poster04{
+	background-image: url(../img/poster_3_s.jpg);
+}
+
+#video{
+	position: relative;
+	background-color: #10344e;
+}
+
+#video iframe{
+	position: relative;
+	left: 50%;
+	margin-left: -500px; 
+	width: 80%;
+	min-height: 500px;
+	height: 100%;
+}
+
+#noise{
+	margin-top: 40px;
+	background-color: #10344e;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+#noise_img{
+	background-image: url(../img/noise_big.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+#noise_img:hover{
+	background-image: url(../img/noise_big_on.png);
+}
+
+#product{
+	position: relative;
+	margin-top: 680px;
+	width: 100%;
+	height: 700px;
+	display: block;
+	background-color: #10344e; 
+}
+
+#product .pro_bg{
+	width: 100%;
+	height: 700px;
+	display: block;
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -90px;
+}
+
+
+#product .money{
+	background-image: url(../img/50.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 590px;
+	margin-right: 590px;
+	width: 20%;
+	height: 40%;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -100px;
+	cursor: pointer;
+}
+
+.money.start{	
+	-webkit-animation: fadeInUp 1s ease-out forwards;
+	   -moz-animation: fadeInUp 1s ease-out forwards;
+	    -ms-animation: fadeInUp 1s ease-out forwards;
+	     -o-animation: fadeInUp 1s ease-out forwards;
+	        animation: fadeInUp 1s ease-out forwards;	
+
+}
+
+@keyframes fadeInUp{
+	0%{
+		opacity: 0;
+		transform: translate(0%, 100%);
+	}
+
+	100%{
+		opacity: 1;
+		transform: none;
+	}
+}
+
+#product .money:hover{
+	background-image: url(../img/sale.png);
+}
+
+
+#product .box{
+	background-image: url(../img/box.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 655px;
+	margin-right: 490px;
+	width: 30%;
+	height: 40%;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	margin-left: -300px;	
+	cursor: pointer;
+}
+
+.box.start {
+	-webkit-animation: bounce 2s ease-out forwards;
+	   -moz-animation: bounce 2s ease-out forwards;
+	    -ms-animation: bounce 2s ease-out forwards;
+	     -o-animation: bounce 2s ease-out forwards;
+	        animation: bounce 2s ease-out forwards;
+}
+
+
+@keyframes bounce{
+ 0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+#product .box:hover{
+	background-image: url(../img/box_hover.png);
+}
+
+
+
+
