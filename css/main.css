@@ -195,6 +195,7 @@ header ul li:nth-child(1) a{
 }
 
 #poster{
+	padding-top:100px;
 	height: 600px;
 	width: 100%;
 	margin-top: 850px;
@@ -240,6 +241,7 @@ header ul li:nth-child(1) a{
 }
 
 #video iframe{
+	padding-top:100px;
 	position: relative;
 	left: 50%;
 	margin-left: -500px; 
@@ -249,6 +251,7 @@ header ul li:nth-child(1) a{
 }
 
 #noise{
+	padding-top:80px;
 	margin-top: 40px;
 	background-color: #10344e;
 	width: 100%;
