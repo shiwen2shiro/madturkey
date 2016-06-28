@@ -2,29 +2,15 @@ $(document).ready(function() {
 	
 	var height = $(window).height();
 
+	$('a').click(function(){
+		$('html, body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
 
-	$(window).scroll(function(){
-
-		var scrollTop = $(this).scrollTop();
-
-		if (scrollTop >= $('#aboutUs').offset().top) {
-
-			$('header').css({
-				'background-color' : 'red',
-			});
-		} else{
-			$('header').css({
-				'background-color' : '#53d4db'
-			});			
-		}
-
-		if (scrollTop > $('#say').offset().top){
-			$('header').css({
-				'background-color' : '#53d4db'
-			});				
-		}
+		return false;
 
 	});
+
 
 
 
